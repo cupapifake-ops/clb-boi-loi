@@ -2,10 +2,9 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Câu lạc bộ Bơi Lội</title>
+  <title>CLB Bơi Lội - THPT Trần Phú</title>
 
   <style>
-    /* RESET CƠ BẢN */
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +21,7 @@
     }
 
     header h1 {
-      font-size: 42px;
+      font-size: 40px;
       margin-bottom: 10px;
     }
 
@@ -31,7 +30,7 @@
       font-style: italic;
     }
 
-    /* NỘI DUNG CHÍNH */
+    /* MAIN */
     main {
       max-width: 1000px;
       margin: 30px auto;
@@ -52,55 +51,69 @@
       margin-bottom: 15px;
     }
 
+    ul {
+      margin-left: 20px;
+    }
+
     /* HÌNH ẢNH */
     .image-box {
       display: flex;
       gap: 20px;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: 15px;
     }
 
     .image-box img {
-      width: 260px;
-      height: 170px;
+      width: 280px;
+      height: 180px;
       object-fit: cover;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 
-    /* BẢNG LỊCH */
-    table {
-      width: 100%;
-      border-collapse: collapse;
+    /* FORM */
+    form {
+      max-width: 500px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
       margin-top: 15px;
     }
 
-    table, th, td {
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
       border: 1px solid #ccc;
     }
 
-    th {
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
       background-color: #1e90ff;
       color: white;
-      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
     }
 
-    td {
-      padding: 12px;
-      text-align: center;
+    button:hover {
+      background-color: #187bcd;
     }
 
-    tr:nth-child(even) {
-      background-color: #f2f6fa;
-    }
-
-    /* FOOTER */
     footer {
       background-color: #1e90ff;
       color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
@@ -109,70 +122,105 @@
 
   <!-- BANNER + SLOGAN -->
   <header>
-    <h1>Câu Lạc Bộ Bơi Lội</h1>
+    <h1>Câu Lạc Bộ Bơi Lội – THPT Trần Phú</h1>
     <p>💧 Khỏe mạnh hôm nay – Vững vàng ngày mai 💧</p>
   </header>
 
-  <!-- NỘI DUNG -->
   <main>
 
     <!-- GIỚI THIỆU -->
     <section>
-      <h2>Giới thiệu câu lạc bộ</h2>
+      <h2>1. Giới thiệu về bơi lội</h2>
       <p>
-        Câu lạc bộ Bơi Lội được thành lập nhằm tạo sân chơi lành mạnh cho học sinh,
-        giúp rèn luyện sức khỏe, nâng cao thể lực và trang bị kỹ năng bơi an toàn.
-        CLB là nơi các bạn học sinh được học hỏi, giao lưu, phát triển tinh thần
-        đoàn kết và tự tin thông qua các hoạt động thể thao dưới nước.
+        Bơi lội là hoạt động vận động dưới nước, giúp con người di chuyển và làm chủ
+        môi trường nước. Đây là một trong những kỹ năng sinh tồn quan trọng,
+        đồng thời cũng là môn thể thao phát triển toàn diện thể chất và tinh thần.
       </p>
     </section>
 
-    <!-- HÌNH ẢNH -->
+    <!-- LỢI ÍCH -->
     <section>
-      <h2>Hình ảnh hoạt động</h2>
+      <h2>2. Lợi ích của bơi lội</h2>
+      <ul>
+        <li>Rèn luyện sức khỏe, tăng sức bền và sự dẻo dai</li>
+        <li>Phát triển cơ bắp và hệ hô hấp</li>
+        <li>Giảm căng thẳng, nâng cao tinh thần</li>
+        <li>Trang bị kỹ năng phòng chống đuối nước</li>
+      </ul>
+    </section>
+
+    <!-- KIỂU BƠI + HÌNH ẢNH -->
+    <section>
+      <h2>3. Các kiểu bơi phổ biến</h2>
+      <ul>
+        <li>Bơi ếch</li>
+        <li>Bơi sải (tự do)</li>
+        <li>Bơi ngửa</li>
+        <li>Bơi bướm</li>
+      </ul>
+
       <div class="image-box">
-        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266634" alt="Tập luyện bơi">
-        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e" alt="Học bơi">
-        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Thi đấu bơi">
+        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266634" alt="Bơi sải">
+        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e" alt="Bơi ếch">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Bơi thi đấu">
       </div>
     </section>
 
-    <!-- LỊCH SINH HOẠT -->
+    <!-- HƯỚNG DẪN -->
     <section>
-      <h2>Lịch sinh hoạt CLB</h2>
-      <table>
-        <tr>
-          <th>Thời gian</th>
-          <th>Ngày</th>
-          <th>Nội dung</th>
-        </tr>
-        <tr>
-          <td>16:00 – 17:30</td>
-          <td>Thứ Ba</td>
-          <td>Luyện tập kỹ thuật bơi cơ bản</td>
-        </tr>
-        <tr>
-          <td>16:00 – 17:30</td>
-          <td>Thứ Năm</td>
-          <td>Nâng cao thể lực và kỹ năng</td>
-        </tr>
-        <tr>
-          <td>08:00 – 10:00</td>
-          <td>Thứ Bảy</td>
-          <td>Thi đấu – hoạt động tập thể</td>
-        </tr>
-      </table>
+      <h2>4. Hướng dẫn cơ bản cho người mới</h2>
+      <ul>
+        <li>Khởi động kỹ trước khi bơi</li>
+        <li>Làm quen với nước và tập thở đúng</li>
+        <li>Tập nổi và giữ thăng bằng</li>
+        <li>Luyện động tác tay – chân riêng lẻ</li>
+      </ul>
+    </section>
+
+    <!-- KIẾN THỨC -->
+    <section>
+      <h2>5. Kiến thức bơi lội</h2>
+      <ul>
+        <li>Không bơi khi quá mệt hoặc vừa ăn no</li>
+        <li>Tuân thủ nội quy hồ bơi</li>
+        <li>Luôn bơi trong khu vực an toàn</li>
+      </ul>
+    </section>
+
+    <!-- FORM ĐĂNG KÝ -->
+    <section>
+      <h2>6. Đăng ký tham gia CLB</h2>
+      <form>
+        <label>Họ và tên</label>
+        <input type="text" placeholder="Nhập họ và tên" required>
+
+        <label>Lớp</label>
+        <input type="text" placeholder="Ví dụ: 11A1" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="example@gmail.com" required>
+
+        <label>Mức độ bơi</label>
+        <select>
+          <option>Chưa biết bơi</option>
+          <option>Biết bơi cơ bản</option>
+          <option>Bơi tốt</option>
+        </select>
+
+        <button type="submit">Gửi đăng ký</button>
+      </form>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 Câu lạc bộ Bơi Lội | Trường THPT</p>
+    <p>© 2026 Câu lạc bộ Bơi Lội – Trường THPT Trần Phú</p>
   </footer>
 
 </body>
 </html>
+
+
 
 
 
