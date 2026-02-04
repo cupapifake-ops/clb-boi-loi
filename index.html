@@ -1,35 +1,178 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>CLB Bơi Lội</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Câu lạc bộ Bơi Lội</title>
+
+  <style>
+    /* RESET CƠ BẢN */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f6fa;
+      line-height: 1.6;
+    }
+
+    /* BANNER */
+    header {
+      background: linear-gradient(to right, #1e90ff, #00bfff);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      font-style: italic;
+    }
+
+    /* NỘI DUNG CHÍNH */
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1e90ff;
+      border-left: 5px solid #1e90ff;
+      padding-left: 10px;
+      margin-bottom: 15px;
+    }
+
+    /* HÌNH ẢNH */
+    .image-box {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image-box img {
+      width: 260px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* BẢNG LỊCH */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th {
+      background-color: #1e90ff;
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      padding: 12px;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f6fa;
+    }
+
+    /* FOOTER */
+    footer {
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="banner">
-    <h1>CÂU LẠC BỘ BƠI LỘI</h1>
-    <p class="slogan">Rèn luyện thể chất – Nâng cao kỹ năng – Vượt qua giới hạn</p>
-</header>
+  <!-- BANNER + SLOGAN -->
+  <header>
+    <h1>Câu Lạc Bộ Bơi Lội</h1>
+    <p>💧 Khỏe mạnh hôm nay – Vững vàng ngày mai 💧</p>
+  </header>
 
-<main class="content">
-    <section class="section">
-        <h2>Giới thiệu CLB</h2>
-       <p>
-Câu lạc bộ Bơi lội là một trong những câu lạc bộ ngoại khóa tiêu biểu của nhà trường,
-được thành lập nhằm tạo môi trường rèn luyện thể chất lành mạnh cho học sinh.
-Tham gia CLB, học sinh không chỉ được hướng dẫn các kỹ năng bơi lội cơ bản và nâng cao
-mà còn được trang bị kiến thức về an toàn dưới nước, phòng tránh tai nạn đuối nước.
-Bên cạnh đó, CLB còn giúp học sinh nâng cao sức khỏe, phát triển tinh thần thể thao,
-ý thức kỷ luật và tinh thần đoàn kết thông qua các buổi tập luyện và hoạt động tập thể.
-    </p>
+  <!-- NỘI DUNG -->
+  <main>
+
+    <!-- GIỚI THIỆU -->
+    <section>
+      <h2>Giới thiệu câu lạc bộ</h2>
+      <p>
+        Câu lạc bộ Bơi Lội được thành lập nhằm tạo sân chơi lành mạnh cho học sinh,
+        giúp rèn luyện sức khỏe, nâng cao thể lực và trang bị kỹ năng bơi an toàn.
+        CLB là nơi các bạn học sinh được học hỏi, giao lưu, phát triển tinh thần
+        đoàn kết và tự tin thông qua các hoạt động thể thao dưới nước.
+      </p>
     </section>
-</main>
 
-<footer class="footer">
-    <p>© 2026 CLB Bơi Lội</p>
-</footer>
+    <!-- HÌNH ẢNH -->
+    <section>
+      <h2>Hình ảnh hoạt động</h2>
+      <div class="image-box">
+        <img src="https://images.unsplash.com/photo-1530549387789-4c1017266634" alt="Tập luyện bơi">
+        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e" alt="Học bơi">
+        <img src="https://images.unsplash.com/photo-1521412644187-c49fa049e84d" alt="Thi đấu bơi">
+      </div>
+    </section>
+
+    <!-- LỊCH SINH HOẠT -->
+    <section>
+      <h2>Lịch sinh hoạt CLB</h2>
+      <table>
+        <tr>
+          <th>Thời gian</th>
+          <th>Ngày</th>
+          <th>Nội dung</th>
+        </tr>
+        <tr>
+          <td>16:00 – 17:30</td>
+          <td>Thứ Ba</td>
+          <td>Luyện tập kỹ thuật bơi cơ bản</td>
+        </tr>
+        <tr>
+          <td>16:00 – 17:30</td>
+          <td>Thứ Năm</td>
+          <td>Nâng cao thể lực và kỹ năng</td>
+        </tr>
+        <tr>
+          <td>08:00 – 10:00</td>
+          <td>Thứ Bảy</td>
+          <td>Thi đấu – hoạt động tập thể</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Câu lạc bộ Bơi Lội | Trường THPT</p>
+  </footer>
 
 </body>
 </html>
+
+
 
